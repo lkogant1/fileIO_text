@@ -21,7 +21,9 @@ if not os.path.exists('write.txt'):
 		#redirect print output to file
 		print("text1", file=out_file)
 		print("text2", file=out_file, sep=",", end="\n")
-		print(",".join(list1)) #list1 = ["apple", "banana","carrot"]
+		
+		list1 = ["apple", "banana","carrot"]
+		print(",".join(list1)) #
 		#for int - convert them to str
 		print(",", .join(str(x) for x in list1))
 		#or #works for both strings andint
