@@ -24,9 +24,10 @@ if not os.path.exists('write.txt'):
 		
 		list1 = ["apple", "banana","carrot"]
 		print(",".join(list1)) #
-		#for int - convert them to str
+		#convert int to str
 		print(",", .join(str(x) for x in list1))
-		#or #works for both strings andint
+		#or 
+		#works for both str and int
 		print(*list1, sep=",", end="\n", file=out_file)
 
 
