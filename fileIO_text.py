@@ -1,7 +1,7 @@
 import os 
-os.chdir("/Users/lk/Desktop/")
-#read a file
+os.chdir("/Users/name/Desktop/")
 
+#read a file
 with open("read.txt", "rt", encoding="utf-8") as in_file:
 	keys1 = []
 	values1= []
@@ -36,7 +36,6 @@ if not os.path.exists('write.txt'):
 
 		print(dictionary, sep=",", end="\n", file=out_file) #prints in dic format
 		
-
 else:
 	print('File already exists!')
 
